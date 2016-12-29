@@ -7,10 +7,13 @@ import java.io.Serializable;
  */
 
 public class CardCounter implements Serializable {
-    public static final String EXTRA = "com.your.package.CARD_COUNTER_EXTRA";
+    public static final String EXTRA = "com.jtliao.secrethitlertracker.CARD_COUNTER_EXTRA";
+    public static final int NUM_FASCIST = 11;
+    public static final int NUM_LIBERAL = 6;
 
     private int numLiberal;
     private int numFascist;
+
 
     public CardCounter(int numLiberal, int numFascist) {
         this.numLiberal = numLiberal;

@@ -16,7 +16,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".GameHome" />
-        <activity android:name=".AddEvent"></activity>
+        <activity android:name=".AddEvent" />
+        <activity android:name=".GameIntro"></activity>
     </application>
 
 </manifest>

@@ -10,6 +10,7 @@ import android.app.AlertDialog;
 
 public class GameSetup extends AppCompatActivity {
     int numPlayers = 5;
+    public static final String EXTRA = "com.jtliao.secrethitlertracker.NUM_PLAYERS_EXTRA";
     AlertDialog.Builder decrementBuilder;
     AlertDialog.Builder incrementBuilder;
 
@@ -22,24 +23,20 @@ public class GameSetup extends AppCompatActivity {
         decrementBuilder.setMessage("Cannot have less than 5 players!")
                 .setCancelable(false)
                 .setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int id) {
-                        //do things
-                    }
+                    public void onClick(DialogInterface dialog, int id) {}
                 });
 
         incrementBuilder = new AlertDialog.Builder(this);
         incrementBuilder.setMessage("Cannot have more than 10 players!")
                 .setCancelable(false)
                 .setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int id) {
-                        //do things
-                    }
+                    public void onClick(DialogInterface dialog, int id) {}
                 });
     }
 
     public void startGame(View view) {
-        Intent i = new Intent(this, GameHome.class);
-        i.putExtra("EXTRA_PLAYERS", numPlayers);
+        Intent i = new Intent(this, GameIntro.class);
+        i.putExtra(EXTRA, numPlayers);
         startActivity(i);
     }
 
