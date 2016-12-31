@@ -38,6 +38,7 @@ public class GameSetup extends AppCompatActivity {
         Intent i = new Intent(this, GameIntro.class);
         i.putExtra(EXTRA, numPlayers);
         startActivity(i);
+        finish();
     }
 
     public void increment(View view) {

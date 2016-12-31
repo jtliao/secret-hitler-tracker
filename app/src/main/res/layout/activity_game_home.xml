@@ -150,4 +150,36 @@
         </TableRow>
     </TableLayout>
 
+    <Button
+        android:text="New Game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2"
+        android:layout_alignBaseline="@+id/addEvent"
+        android:layout_alignBottom="@+id/addEvent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="newGame"/>
+
+    <Button
+        android:text="Liberal Policies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/addEvent"
+        android:layout_alignEnd="@+id/addEvent"
+        android:layout_marginTop="19dp"
+        android:id="@+id/button3"
+        android:onClick="displayLiberal"/>
+
+    <Button
+        android:text="Fascist Policies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/button3"
+        android:layout_toRightOf="@+id/textView4"
+        android:layout_toEndOf="@+id/textView4"
+        android:id="@+id/button4"
+        android:onClick="displayFascist"/>
+
 </RelativeLayout>
